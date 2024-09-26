@@ -6,7 +6,7 @@ const ResultModal = forwardRef(function ResultModal({ result, targetTime }, ref)
     useImperativeHandle(ref, () => {
         return {
             open() {
-                dialog.current.open();
+                dialog.current.showModal();
             }
         }
     });
